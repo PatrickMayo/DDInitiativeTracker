@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">D&amp;D Initiative Tracker</string>
+
+    <!--Creature Card Strings-->
+    <string name="creature_name">Name</string>
+    <string name="creature_ac">AC</string>
+    <string name="creature_initiative">99</string>
+
 </resources>
