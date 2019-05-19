@@ -12,13 +12,14 @@
         android:id="@+id/card_view"
         android:layout_gravity="start"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         card_view:cardCornerRadius="4dp"
-        card_view:cardElevation="5dp"
+        card_view:cardElevation="8dp"
         card_view:cardBackgroundColor="@color/colorPrimary"
         android:layout_margin="10dp"
         >
 
+        <!--A ConstraintView would probably be better than LL here-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,7 +28,7 @@
             <!--ImageView's layout width is only 50 to compact the image-->
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="50dp"
+                android:layout_width="38dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:scaleType="fitStart"
@@ -37,13 +38,13 @@
 
             <TextView
                 android:id="@+id/creature_initText"
-                android:layout_width="30dp"
+                android:layout_width="22dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="@{viewModel.init}"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textSize="24sp" />
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:text="@{viewModel.name}"
                     android:textColor="@android:color/white"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/creature_acText"
@@ -65,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="@{viewModel.AC}"
                     android:textColor="@android:color/white"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
         </LinearLayout>

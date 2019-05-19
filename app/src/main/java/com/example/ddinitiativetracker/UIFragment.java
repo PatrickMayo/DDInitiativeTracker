@@ -93,10 +93,16 @@ public class UIFragment extends Fragment {
     //TEST LIST: REMOVE!
     private List<Creature> test(){
         List<Creature> testCreatures = new ArrayList<>();
-            testCreatures.add(new Monster("Goblin Infantry", 10, 1));
-            testCreatures.add(new Monster("Goblin Boss", 15, 19));
-            testCreatures.add(new Monster("Bugbear", 11, 8));
-            testCreatures.add(new Monster("Red Dragon", 21, 19));
+
+        testCreatures.add(new Monster("Goblin Infantry", 10, 1));
+        testCreatures.add(new Monster("Goblin Boss", 15, 19));
+        testCreatures.add(new Monster("Bugbear", 11, 8));
+        testCreatures.add(new Monster("Red Dragon", 21, 19));
+        testCreatures.add(new Monster("Kobold Infantry", 10, 2));
+        testCreatures.add(new Monster("Kobold Boss", 13, 11));
+        testCreatures.add(new Monster("Guard Drake", 14, 12));
+        testCreatures.add(new Monster("Black Dragon", 1, 5));
+
 
         return testCreatures;
     }
