@@ -7,7 +7,7 @@
     <string name="creature_initiative">99</string>
 
     <!--fragment_main Strings-->
-    <string name="currentTurn_name">Current Player Name</string>
+    <string name="currentTurn_name">Current Player Name\'s Turn</string>
     <string name="remainingTime">00:00</string>
 
 </resources>
