@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.ddinitiativetracker.CreatureViewModel" />
+            type="com.example.ddinitiativetracker.ViewModel" />
     </data>
 
     <android.support.v7.widget.CardView
@@ -44,7 +44,7 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="@{viewModel.init}"
+                android:text="@{viewModel.getCreatureInit()}"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
-                android:text="@{viewModel.name}"
+                android:text="@{viewModel.getCreatureName()}"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 card_view:layout_constraintStart_toEndOf="@+id/creature_initText"
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginBottom="6dp"
-                android:text="@{viewModel.AC}"
+                android:text="@{viewModel.getCreatureAC()}"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
