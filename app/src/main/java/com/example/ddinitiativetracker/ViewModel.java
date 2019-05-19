@@ -5,11 +5,11 @@ package com.example.ddinitiativetracker;
     Michael Marinaro & Patrick Mayo, May 2019
  */
 
-public class CreatureViewModel {
+public class ViewModel {
     private Creature creature;
     private Manager manager;
 
-    public CreatureViewModel(Manager manager) {
+    public ViewModel(Manager manager) {
         this.manager = manager;
     }
 

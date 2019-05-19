@@ -52,7 +52,7 @@ public class UIFragment extends Fragment {
         private CreatureHolder(ListItemCreatureCardBinding binding) {
             super(binding.getRoot());
             mBinding = binding;
-            mBinding.setViewModel(new CreatureViewModel(manager));
+            mBinding.setViewModel(new ViewModel(manager));
         }
 
         public void bind(Creature creature) {
