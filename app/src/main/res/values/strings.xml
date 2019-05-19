@@ -8,8 +8,15 @@
     <string name="creature_hp">250/250</string>
 
 
-    <!--fragment_main Strings-->
+    <!--Main Strings-->
     <string name="currentTurn_name">Current Player Name\'s Turn</string>
     <string name="remainingTime">00:00</string>
+
+    <!--Creature Creator Strings-->
+    <string name="creator_creature_name">Name</string>
+    <string name="creator_creature_ac">Armor Class</string>
+    <string name="creator_creature_initiative">Initiative</string>
+
+
 
 </resources>
