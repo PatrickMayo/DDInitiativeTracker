@@ -8,6 +8,7 @@ package com.example.ddinitiativetracker;
 public class ViewModel {
     private Creature creature;
     private Manager manager;
+    private EncounterRepository repository = EncounterRepository.getInstance();
 
     public ViewModel(Manager manager) {
         this.manager = manager;
@@ -32,4 +33,12 @@ public class ViewModel {
     public String getInit() {
         return Integer.toString(creature.getInitiative());
     }
+
+
+    //Save a new creature to the current encounter from the text input from fragment_creature_creator
+    public void saveNewCreature() {
+
+
+    }
+
 }

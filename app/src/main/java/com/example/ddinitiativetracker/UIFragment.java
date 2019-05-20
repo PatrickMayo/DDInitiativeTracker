@@ -21,6 +21,7 @@ import java.util.List;
 public class UIFragment extends Fragment {
 
     private Manager manager;
+    private EncounterRepository repository = EncounterRepository.getInstance();
 
 
     public static UIFragment newInstance() {
@@ -41,7 +42,7 @@ public class UIFragment extends Fragment {
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         //populate view from list of creatures
-        binding.recyclerView.setAdapter(new CreatureAdapter(test())); //<------- CURRENTLY USING TEST CREATURES
+        binding.recyclerView.setAdapter(new CreatureAdapter(repository.getCreatureList()));
 
         return binding.getRoot();
     }
@@ -88,22 +89,5 @@ public class UIFragment extends Fragment {
         public int getItemCount() {
             return mCreatures.size();
         }
-    }
-
-    //TEST LIST: REMOVE!
-    private List<Creature> test(){
-        List<Creature> testCreatures = new ArrayList<>();
-
-        testCreatures.add(new Monster("Goblin Infantry", 10, 1));
-        testCreatures.add(new Monster("Goblin Boss", 15, 19));
-        testCreatures.add(new Monster("Bugbear", 11, 8));
-        testCreatures.add(new Monster("Red Dragon", 21, 19));
-        testCreatures.add(new Monster("Kobold Infantry", 10, 2));
-        testCreatures.add(new Monster("Kobold Boss", 13, 11));
-        testCreatures.add(new Monster("Guard Drake", 14, 12));
-        testCreatures.add(new Monster("Black Dragon", 1, 5));
-
-
-        return testCreatures;
     }
 }
