@@ -8,6 +8,7 @@ package com.example.ddinitiativetracker;
 public class ViewModel {
     private Creature creature;
     private Manager manager;
+    private EncounterRepository repository = EncounterRepository.getInstance();
 
     public ViewModel(Manager manager) {
         this.manager = manager;
