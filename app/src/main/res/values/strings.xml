@@ -16,6 +16,7 @@
     <string name="creator_creature_name">Name</string>
     <string name="creator_creature_ac">Armor Class</string>
     <string name="creator_creature_initiative">Initiative</string>
+    <string name="creator_save">Save</string>
 
 
 

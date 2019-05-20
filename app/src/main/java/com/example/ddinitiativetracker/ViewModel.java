@@ -33,4 +33,12 @@ public class ViewModel {
     public String getInit() {
         return Integer.toString(creature.getInitiative());
     }
+
+
+    //Save a new creature to the current encounter from the text input from fragment_creature_creator
+    public void saveNewCreature() {
+
+
+    }
+
 }
