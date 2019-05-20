@@ -1,6 +1,7 @@
 package com.example.ddinitiativetracker;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class EncounterRepository {
 
     private EncounterRepository(){
         creatureList = test();
+        sortInit(creatureList); //TODO: Remove this test.
     }
 
     public static EncounterRepository getInstance(){
@@ -39,9 +41,9 @@ public class EncounterRepository {
         creatureList.add(creature);
     }
 
-//    public void sortInit(List<Creature> cList){
-//
-//    }
+    public void sortInit(List<Creature> cList){
+        Collections.sort(cList, new InitiativeComparator());
+    }
 
     //TEST LIST
     private List<Creature> test(){
